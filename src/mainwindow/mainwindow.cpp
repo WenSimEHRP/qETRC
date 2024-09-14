@@ -1290,7 +1290,7 @@ void MainWindow::initToolbar()
 		connect(act, &QAction::triggered, this, &MainWindow::actGreedyPaint);
 
 #ifdef QETRC_GREEDYPAINT_TEST
-		act = new QAction(QIcon(":/icons/ruler_pen.png"), tr("贪心排图（测试）"), this);
+		act = new QAction(QIcon(":/icons/toll.svg"), tr("贪心排图（测试）"), this);
 		addAction(act);
 		act->setShortcut(Qt::CTRL + Qt::SHIFT + Qt::Key_T);
 		act->setToolTip(tr("自动贪心排图快速测试 (Ctrl+Shift+T)\n使用指定线路的指定标尺，"
